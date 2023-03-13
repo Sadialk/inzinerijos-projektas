@@ -7,8 +7,11 @@ public class EnemyMovement : MonoBehaviour
     public float speed = 10f;
     private Transform target;
     private int waveintIndex = 0;
+    private GameObject manager;
+
     void Start()
     {
+        
         target = Waypoints.points[0];
     }
 
@@ -16,7 +19,7 @@ public class EnemyMovement : MonoBehaviour
     void Update()
     {
         Vector3 dir = target.position - transform.position;
-        transform.Translate(dir.normalized* speed * Time.deltaTime);
+        transform.Translate(dir.normalized * speed * Time.deltaTime);
 
 
         if (Vector3.Distance(transform.position, target.position) <= 0.2f)
@@ -30,6 +33,9 @@ public class EnemyMovement : MonoBehaviour
     {
         if (waveintIndex >= Waypoints.points.Length - 1)
         {
+            manager = GameObject.Find("MANAGER");
+            manager.GetComponent<PlayerHealth>().TakeDamage(waveintIndex);
+            
             Destroy(gameObject);
             return;
         }
