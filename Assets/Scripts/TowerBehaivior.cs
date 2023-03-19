@@ -6,9 +6,10 @@ using UnityEditor;
 public class TowerBehaivior : MonoBehaviour
 {
     // Start is called before the first frame update
-    public Transform target;
+    private Transform target;
     public float range = 1f;
 
+    public Transform partToRotate;
     public string enemyTag = "Enemy";
     void Start()
     {
@@ -50,7 +51,11 @@ public class TowerBehaivior : MonoBehaviour
     {
         if (target == null)
             return;
-        
+        //Find direction where to attack enemy
+        Vector3 dir = target.position - transform.position;
+        Quaternion lookRotation = Quaternion.LookRotation(dir);
+        Vector3 rotation = lookRotation.eulerAngles;
+        partToRotate.rotation = Quaternion.Euler(0f, rotation.y, 0f);
     }
 
     void OnDrawGizmosSelected()
