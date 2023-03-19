@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -26,9 +27,9 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    void Die()
+    public void Die()
     {
-        // Implement game over logic here
+        throw new NotImplementedException();
     }
 
     void UpdateHealthText()
