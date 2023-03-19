@@ -3,14 +3,22 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using UnityEngine;
 using UnityEditor;
-public class TowerBehaivior : MonoBehaviour
+public class TowerBehaviour : MonoBehaviour
 {
     // Start is called before the first frame update
     private Transform target;
-    public float range = 1f;
-
+    
+    [Header("Attributes")]
+    public float range = 50f;
+    public float fireVelocity = 1f;
+    private float fireCountdown = 0f;
+    
+    [Header("Unity setup")]
     public Transform partToRotate;
     public string enemyTag = "Enemy";
+
+    public GameObject bulletPrefab;
+    public Transform firePoint;
     void Start()
     {
         InvokeRepeating("UpdateTarget", 0f, 0.5f);
@@ -55,9 +63,28 @@ public class TowerBehaivior : MonoBehaviour
         Vector3 dir = target.position - transform.position;
         Quaternion lookRotation = Quaternion.LookRotation(dir);
         Vector3 rotation = lookRotation.eulerAngles;
-        partToRotate.rotation = Quaternion.Euler(0f, rotation.y, 0f);
+        partToRotate.rotation = Quaternion.Euler(rotation.x, rotation.y, 0f);
+
+        if (fireCountdown <= 0f)
+        {
+            Shoot();
+            fireCountdown = 1 / fireVelocity;
+        }
+        
+        fireCountdown -= Time.deltaTime;
+        
     }
 
+    void Shoot()
+    {
+        GameObject  bulletObject = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        Bullet bullet = bulletObject.GetComponent<Bullet>();
+
+        if (bullet != null)
+        {
+            bullet.Chase(target);
+        }
+    }
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;

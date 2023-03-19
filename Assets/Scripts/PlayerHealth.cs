@@ -29,7 +29,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void Die()
     {
-        throw new NotImplementedException();
+        //implement this method
     }
 
     void UpdateHealthText()
