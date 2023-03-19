@@ -4,6 +4,7 @@ public class EnemyHealth : MonoBehaviour
 {
     public int maxHealth = 100;
     public int currentHealth;
+    private int currencyValue;
 
     void Start()
     {
@@ -21,6 +22,13 @@ public class EnemyHealth : MonoBehaviour
 
     void Die()
     {
+        // Add currency to the player
+        PlayerCurrency playerCurrency = FindObjectOfType<PlayerCurrency>();
+        if (playerCurrency != null)
+        {
+            playerCurrency.AddCurrency(currencyValue);
+        }
+
         // Code to handle the enemy dying
         Destroy(gameObject);
     }
