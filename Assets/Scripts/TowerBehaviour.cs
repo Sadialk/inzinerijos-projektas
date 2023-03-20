@@ -41,7 +41,6 @@ public class TowerBehaviour : MonoBehaviour
                 shortestDistance = distanceToEnemy;
                 nearestEnemy = enemy;
             }
-            
         }
 
         if (nearestEnemy != null && shortestDistance <= range)
