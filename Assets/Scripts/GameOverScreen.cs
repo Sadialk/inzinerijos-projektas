@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using UnityEngine.SceneManagment;
 public class GameOverScreen : MonoBehaviour
 {
     public GameObject gameOverUI;
@@ -18,6 +18,7 @@ public class GameOverScreen : MonoBehaviour
 
     public void restart()
     {
+        Debug.Log("A");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
