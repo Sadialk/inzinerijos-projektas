@@ -23,7 +23,7 @@ public class EnemyHealth : MonoBehaviour
     void Die()
     {
         // Add currency to the player
-        PlayerCurrency playerCurrency = FindObjectOfType<PlayerCurrency>();
+        Currency playerCurrency = FindObjectOfType<Currency>();
         if (playerCurrency != null)
         {
             playerCurrency.AddCurrency(currencyValue);
