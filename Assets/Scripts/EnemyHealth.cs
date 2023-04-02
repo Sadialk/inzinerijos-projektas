@@ -2,12 +2,15 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
+    Currency money;
     public int maxHealth = 100;
     public int currentHealth;
-    private int currencyValue;
+    private int currencyValue = 5;
+
 
     void Start()
     {
+        money = Currency.money;
         currentHealth = maxHealth;
     }
 
@@ -23,12 +26,7 @@ public class EnemyHealth : MonoBehaviour
     void Die()
     {
         // Add currency to the player
-        Currency playerCurrency = FindObjectOfType<Currency>();
-        if (playerCurrency != null)
-        {
-            playerCurrency.AddCurrency(currencyValue);
-        }
-
+            money.AddCurrency(currencyValue);
         // Code to handle the enemy dying
         Destroy(gameObject);
     }

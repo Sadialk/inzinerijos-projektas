@@ -2,13 +2,19 @@ using UnityEngine;
 using TMPro;
 public class Currency : MonoBehaviour
 {
+    public static Currency money;
     public int startingCurrency = 500;
     private int currentCurrency;
     public TMP_Text currencyText;
+    private void Awake()
+    {
+        money = this;
+        Debug.Log("set currency instance");
+    }
     void Start()
     {
         currentCurrency = startingCurrency;
-        UpdateCurrencyText(); 
+        UpdateCurrencyText();
     }
 
     void UpdateCurrencyText()
@@ -18,13 +24,13 @@ public class Currency : MonoBehaviour
     public void AddCurrency(int amount)
     {
         currentCurrency += amount;
-        UpdateCurrencyText(); 
+        UpdateCurrencyText();
     }
 
     public void RemoveCurrency(int amount)
     {
         currentCurrency -= amount;
-        UpdateCurrencyText(); 
+        UpdateCurrencyText();
     }
 
     public int GetCurrentCurrency()
