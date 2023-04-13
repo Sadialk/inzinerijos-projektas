@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
+    [SerializeField] private AudioClip clip;
+
     Currency money;
     public int maxHealth = 100;
     public int currentHealth;
@@ -26,8 +28,10 @@ public class EnemyHealth : MonoBehaviour
     void Die()
     {
         // Add currency to the player
-            money.AddCurrency(currencyValue);
+        money.AddCurrency(currencyValue);
         // Code to handle the enemy dying
         Destroy(gameObject);
+        // Code that plays enemy death sound
+        AudioManager.Instance.PlaySound(clip);
     }
 }
