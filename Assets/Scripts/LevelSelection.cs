@@ -17,11 +17,13 @@ public class LevelSelection : MonoBehaviour
         Button lvl2 = Button2.GetComponent<Button>();
         Button lvl3 = Button3.GetComponent<Button>();
         Button lvl4 = Button4.GetComponent<Button>();
+        Button mainMenu = Button5.GetComponent<Button>();
         
         Button1.onClick.AddListener(Load1);
         Button2.onClick.AddListener(Load2);
         Button3.onClick.AddListener(Load3);
         Button4.onClick.AddListener(Load4);
+        mainMenu.onClick.AddListener(Load5);
     }
     public void Load1() {
         SceneManager.LoadScene("SampleScene");
@@ -34,5 +36,8 @@ public class LevelSelection : MonoBehaviour
     }
     public void Load4() {
         SceneManager.LoadScene("Level4");
+    }
+    public void Load5() {
+        SceneManager.LoadScene("MainMenuScene");
     }
 }
