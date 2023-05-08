@@ -11,6 +11,7 @@ public class MainMenu : MonoBehaviour
     public GameObject currencyUI;
     public GameObject healthUI;
     public GameObject gameOverUI;
+    public GameObject VictoryUI;
     public void Start()
     {
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);

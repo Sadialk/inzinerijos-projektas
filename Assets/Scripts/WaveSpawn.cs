@@ -13,27 +13,24 @@ public class WaveSpawn : MonoBehaviour
     private int waveIndex = 1;
     public TMP_Text CurrentWaveText;
     public int WAVE_AMOUNT = 2;
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
+    public GameObject VictoryUI;
 
     // Update is called once per frame
     void Update()
     {
         if (WAVE_AMOUNT <= 0)
         {
-            // game ends;
+            VictoryUI.SetActive(true);
+            Time.timeScale = 0f;
         }
         if (countdown <= 0f && WAVE_AMOUNT > 0)
         {
-            Debug.Log("UPD:ATE");
             CurrentWaveText.text = waveIndex.ToString();
             StartCoroutine(SpawnWave());
             countdown = timeBetweenWaves;
             WAVE_AMOUNT--;
         }
-        countdown -= Time.deltaTime;
+            countdown -= Time.deltaTime;
     }
     IEnumerator SpawnWave()
     {
