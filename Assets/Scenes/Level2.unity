@@ -862,9 +862,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 594189901}
     - target: {fileID: 2505255961924462572, guid: 337c44f97da394247992b152d887ed08, type: 3}
+      propertyPath: ShopUI
+      value: 
+      objectReference: {fileID: 594189901}
+    - target: {fileID: 2505255961924462572, guid: 337c44f97da394247992b152d887ed08, type: 3}
+      propertyPath: healthUI
+      value: 
+      objectReference: {fileID: 2012971949}
+    - target: {fileID: 2505255961924462572, guid: 337c44f97da394247992b152d887ed08, type: 3}
       propertyPath: MainMenuUI
       value: 
       objectReference: {fileID: 851844225}
+    - target: {fileID: 2505255961924462572, guid: 337c44f97da394247992b152d887ed08, type: 3}
+      propertyPath: currencyUI
+      value: 
+      objectReference: {fileID: 1632264978}
     - target: {fileID: 2505255961924462572, guid: 337c44f97da394247992b152d887ed08, type: 3}
       propertyPath: pauseMenuUI
       value: 
@@ -2483,6 +2495,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2473188833618918014, guid: dec0ecd55d8220145b1fb8f8b7fcf847, type: 3}
+      propertyPath: shopUI
+      value: 
+      objectReference: {fileID: 2012971949}
+    - target: {fileID: 2473188833618918014, guid: dec0ecd55d8220145b1fb8f8b7fcf847, type: 3}
+      propertyPath: healthUI
+      value: 
+      objectReference: {fileID: 2012971949}
+    - target: {fileID: 2473188833618918014, guid: dec0ecd55d8220145b1fb8f8b7fcf847, type: 3}
+      propertyPath: currencyUI
+      value: 
+      objectReference: {fileID: 1632264978}
+    - target: {fileID: 2473188833618918014, guid: dec0ecd55d8220145b1fb8f8b7fcf847, type: 3}
       propertyPath: gameOverUI
       value: 
       objectReference: {fileID: 1332790827}
@@ -3254,7 +3278,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
-        m_MethodName: MainMenu.Start
+        m_MethodName: 
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3263,7 +3287,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
 --- !u!114 &1195945261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4011,7 +4035,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1632264979}
   m_Layer: 5
-  m_Name: Currency
+  m_Name: CurrencyUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4524,6 +4548,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverUI: {fileID: 1332790827}
+  shopUI: {fileID: 0}
+  currencyUI: {fileID: 0}
+  healthUI: {fileID: 0}
 --- !u!114 &1749281940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5671,6 +5698,22 @@ PrefabInstance:
       propertyPath: Shop
       value: 
       objectReference: {fileID: 594189901}
+    - target: {fileID: 7485644661023897641, guid: 1caf507bbdff42f4abd2ed45b511c6ab, type: 3}
+      propertyPath: shopUI
+      value: 
+      objectReference: {fileID: 594189901}
+    - target: {fileID: 7485644661023897641, guid: 1caf507bbdff42f4abd2ed45b511c6ab, type: 3}
+      propertyPath: healthUI
+      value: 
+      objectReference: {fileID: 2012971949}
+    - target: {fileID: 7485644661023897641, guid: 1caf507bbdff42f4abd2ed45b511c6ab, type: 3}
+      propertyPath: currencyUI
+      value: 
+      objectReference: {fileID: 1632264978}
+    - target: {fileID: 7485644661023897641, guid: 1caf507bbdff42f4abd2ed45b511c6ab, type: 3}
+      propertyPath: gameOverUI
+      value: 
+      objectReference: {fileID: 1332790827}
     - target: {fileID: 7485644661023897641, guid: 1caf507bbdff42f4abd2ed45b511c6ab, type: 3}
       propertyPath: quitButton
       value: 

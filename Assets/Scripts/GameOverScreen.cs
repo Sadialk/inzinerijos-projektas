@@ -4,6 +4,10 @@ using UnityEngine;
 public class GameOverScreen : MonoBehaviour
 {
     public GameObject gameOverUI;
+
+    public GameObject shopUI;
+    public GameObject currencyUI;
+    public GameObject healthUI;
     public static bool GameIsOver=false;
     void Start() {
         
@@ -16,5 +20,8 @@ public class GameOverScreen : MonoBehaviour
         GameIsOver=true;
         Time.timeScale = 0f;
         gameOverUI.SetActive(true);
+        shopUI.SetActive(false);
+        currencyUI.SetActive(false);
+        healthUI.SetActive(false);
     }
 }

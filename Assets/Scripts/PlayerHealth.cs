@@ -38,7 +38,7 @@ public class PlayerHealth : MonoBehaviour
     void UpdateHealthText()
     {
         if(currentHealth<=0)
-            healthText.text=0.ToString();//"0";
+            healthText.text="0";
         else
             healthText.text = currentHealth.ToString(); // Update the health UI text to display the player's current health
     }

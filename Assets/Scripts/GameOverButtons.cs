@@ -40,6 +40,7 @@ public class GameOverButtons : MonoBehaviour
     {
         GameIsOver=false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1f;
         Debug.Log("RESTART BUTTON WORKING");
     }
 }

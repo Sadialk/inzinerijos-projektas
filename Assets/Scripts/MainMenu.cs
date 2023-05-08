@@ -7,7 +7,10 @@ public class MainMenu : MonoBehaviour
 {
 	public Button startButton;
 	public Button quitButton;
-	public GameObject Shop;
+	public GameObject shopUI;
+    public GameObject currencyUI;
+    public GameObject healthUI;
+    public GameObject gameOverUI;
     public void Start()
     {
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
@@ -25,7 +28,15 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1f;
-		Shop.SetActive(true);
+
+        gameOverUI.SetActive(false);
+
+        shopUI.SetActive(false);
+
+        currencyUI.SetActive(false);
+
+        healthUI.SetActive(false);
+
         Debug.Log("Start BUTTON WORKING");
     }
 }
