@@ -20,7 +20,7 @@ public class EnemyMovement : MonoBehaviour
     {
         Vector3 dir = target.position - transform.position;
         transform.Translate(dir.normalized * speed * Time.deltaTime);
-
+        transform.GetChild(1).transform.LookAt(transform.position +dir * Time.deltaTime);
 
         if (Vector3.Distance(transform.position, target.position) <= 0.2f)
         {
