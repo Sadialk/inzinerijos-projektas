@@ -36,7 +36,7 @@ public class MeleeTower : MonoBehaviour
         {
             if (t != null)
             {
-                t.gameObject.GetComponent<EnemyHealth>().TakeDamage(10);
+                t.gameObject.GetComponent<EnemyHealth>().TakeDamage(1);
 
             }
             else

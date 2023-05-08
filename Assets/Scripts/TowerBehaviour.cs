@@ -76,9 +76,8 @@ public class TowerBehaviour : MonoBehaviour
 
     void Shoot()
     {
-        GameObject  bulletObject = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        GameObject  bulletObject = (GameObject)Instantiate(bulletPrefab, firePoint.position,  Quaternion.Euler(90, 0,0));
         Bullet bullet = bulletObject.GetComponent<Bullet>();
-
         if (bullet != null)
         {
             bullet.Chase(target);
