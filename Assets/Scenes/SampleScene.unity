@@ -328,8 +328,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -652,6 +652,7 @@ GameObject:
   - component: {fileID: 291907781}
   - component: {fileID: 291907778}
   - component: {fileID: 291907780}
+  - component: {fileID: 291907782}
   m_Layer: 0
   m_Name: MANAGER
   m_TagString: Untagged
@@ -723,6 +724,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingCurrency: 500
   currencyText: {fileID: 2037534605}
+--- !u!114 &291907782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 291907777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b06495d2cfe42de418a90245bdc4c6c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenuUI: {fileID: 1755758105}
+  resumebutton: {fileID: 838446820}
+  mainMenuButton: {fileID: 1881466328}
+  MainMenuUI: {fileID: 1854997561}
+  Shop: {fileID: 402346194}
 --- !u!1 &381729242
 GameObject:
   m_ObjectHideFlags: 0
@@ -3825,14 +3843,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.74509805}
-  m_RaycastTarget: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 0.74509805}
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: e9bdca9f6adf22141a98b0f2a31bbb83, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
