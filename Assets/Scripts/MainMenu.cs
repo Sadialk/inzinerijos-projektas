@@ -7,14 +7,11 @@ public class MainMenu : MonoBehaviour
 {
 	public Button startButton;
 	public Button quitButton;
-	public GameObject Shop;
     public void Start()
     {
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 		Button quit = quitButton.GetComponent<Button>();
 		Button Start = startButton.GetComponent<Button>();
         Start.onClick.AddListener(StartGame);
-
         quit.onClick.AddListener(QuitGame);
     }
     public void QuitGame() {
@@ -23,9 +20,7 @@ public class MainMenu : MonoBehaviour
     }
     public void StartGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        Time.timeScale = 1f;
-		Shop.SetActive(true);
+        SceneManager.LoadScene("LevelSelection");
         Debug.Log("Start BUTTON WORKING");
     }
 }

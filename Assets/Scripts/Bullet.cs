@@ -4,6 +4,7 @@ public class Bullet : MonoBehaviour
 {
     private Transform target;
     public float speed = 100f;
+    public int damage = 30;
 
     public void Chase(Transform _target)
     {
@@ -22,7 +23,9 @@ public class Bullet : MonoBehaviour
         //find direction for the bullet  to travel
         Vector3 dir = target.position - transform.position;
         float distance = speed * Time.deltaTime;
-        
+        Quaternion lookRotation = Quaternion.LookRotation(dir);
+        Vector3 rotation = lookRotation.eulerAngles;
+        transform.rotation = Quaternion.Euler(rotation.x+90, rotation.y, 0f);
         //check  if the bullet reaches the  raget
         if (dir.magnitude <= distance)
         {
@@ -39,7 +42,7 @@ public class Bullet : MonoBehaviour
 
         if (enemy != null)
         {
-            enemy.TakeDamage(50);
+            enemy.TakeDamage(damage);
         }
     }
     //if the target is hit destroy the bullet and damage the enemy

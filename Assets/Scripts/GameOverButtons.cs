@@ -9,8 +9,6 @@ public class GameOverButtons : MonoBehaviour
     // Start is called before the first frame update
     public Button restartButton;
     public Button mainMenuButton;
-    public GameObject MainMenuUI;
-    public GameObject gameOverUI;
 
     public static bool GameIsOver=GameOverScreen.GameIsOver;
     public GameObject Shop;
@@ -31,15 +29,13 @@ public class GameOverButtons : MonoBehaviour
 
     public void OpenMainMenu()
     {
-        GameIsOver=false;
-        Shop.SetActive(false);
-        gameOverUI.SetActive(false);
-        MainMenuUI.SetActive(true);
+        SceneManager.LoadScene("MainMenuScene");
     }
     public void RestartGame()
     {
         GameIsOver=false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1f;
         Debug.Log("RESTART BUTTON WORKING");
     }
 }

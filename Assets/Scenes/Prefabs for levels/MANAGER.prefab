@@ -63,8 +63,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Turret1: {fileID: 4215456141445491464, guid: 498d0594775bae4418df59ae16f28ef7, type: 3}
   Turret2: {fileID: 427656044195266002, guid: de315f2846daeb943802c44244572302, type: 3}
-  Turret3: {fileID: 0}
-  Turret4: {fileID: 0}
+  Turret3: {fileID: 3955935779002518298, guid: cab9663ba694401419c2612d54e74915, type: 3}
+  Turret4: {fileID: 370544354781306077, guid: 9a3086c72874acd42ab6c9a8b4551bb8, type: 3}
   Turret5: {fileID: 0}
   TurretToBuild: {fileID: 0}
   price: 50
@@ -100,4 +100,6 @@ MonoBehaviour:
   resumebutton: {fileID: 0}
   mainMenuButton: {fileID: 0}
   MainMenuUI: {fileID: 0}
-  Shop: {fileID: 0}
+  ShopUI: {fileID: 0}
+  currencyUI: {fileID: 0}
+  healthUI: {fileID: 0}

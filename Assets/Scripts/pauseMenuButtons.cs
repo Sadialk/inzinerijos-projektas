@@ -13,8 +13,6 @@ public class pauseMenuButtons : MonoBehaviour
 
     public Button resumebutton;
     public Button mainMenuButton;
-    public GameObject MainMenuUI;
-    public GameObject Shop;
     void Start()
     {
         Button resume = resumebutton.GetComponent<Button>();
@@ -27,13 +25,7 @@ public class pauseMenuButtons : MonoBehaviour
 
     public void OpenMainMenu()
     {
-        Shop.SetActive(false);
-
-        pauseMenuUI.SetActive(false);
-        
-        MainMenuUI.SetActive(true);
-        GameIsPaused =true;
-        PauseMenu.GameIsPaused=true;
+       SceneManager.LoadScene("MainMenuScene");
     }
     public void ResumeGame()
     {
