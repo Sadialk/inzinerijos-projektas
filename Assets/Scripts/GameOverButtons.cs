@@ -11,6 +11,8 @@ public class GameOverButtons : MonoBehaviour
     public Button mainMenuButton;
     public GameObject MainMenuUI;
     public GameObject gameOverUI;
+
+    public static bool GameIsOver=GameOverScreen.GameIsOver;
     public GameObject Shop;
     void Start()
     {
@@ -29,12 +31,14 @@ public class GameOverButtons : MonoBehaviour
 
     public void OpenMainMenu()
     {
+        GameIsOver=false;
         Shop.SetActive(false);
         gameOverUI.SetActive(false);
         MainMenuUI.SetActive(true);
     }
     public void RestartGame()
     {
+        GameIsOver=false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Debug.Log("RESTART BUTTON WORKING");
     }
