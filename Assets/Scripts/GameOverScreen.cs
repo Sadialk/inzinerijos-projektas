@@ -4,6 +4,7 @@ using UnityEngine;
 public class GameOverScreen : MonoBehaviour
 {
     public GameObject gameOverUI;
+    public static bool GameIsOver=false;
     void Start() {
         
     }
@@ -12,6 +13,7 @@ public class GameOverScreen : MonoBehaviour
     }
     public void gameOver()
     {
+        GameIsOver=true;
         gameOverUI.SetActive(true);
     }
 }
