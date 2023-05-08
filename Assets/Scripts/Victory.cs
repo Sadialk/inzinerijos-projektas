@@ -7,12 +7,6 @@ using UnityEngine;
 
 public class Victory : MonoBehaviour
 {
-<<<<<<< Updated upstream
-    public GameObject MainMenuUI;
-    public void OpenMainMenu()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-=======
     public Button ContinueB;
     public Button MainMenuB;
     public GameObject VictoryUI;
@@ -28,13 +22,10 @@ public class Victory : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
-    public void OpenlevelSelection()
-    {
-        SceneManager.LoadScene("LevelSelection");
-    }
+
     public void OpenMainMenu()
     {
         SceneManager.LoadScene("MainMenuScene");
->>>>>>> Stashed changes
+
     }
 }
