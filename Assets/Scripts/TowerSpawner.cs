@@ -38,14 +38,14 @@ public class TowerSpawner : MonoBehaviour
             }
             else if (TurretToBuild != null)
             {
-                money.AddCurrency(-price);
                 Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition); // Create a ray from the mouse position
                 RaycastHit hitInfo; // Store information about the object hit by the ray
-
-                if (Physics.Raycast(ray, out hitInfo)) // Cast the ray and check if it hit an object
+                int FloorLayer = 1 << LayerMask.NameToLayer("Floor");
+                if (Physics.Raycast(ray, out hitInfo, float.MaxValue, FloorLayer)) // Cast the ray and check if it hit an object
                 {
                     Vector3 spawnPos = hitInfo.point; // Set the spawn position to the point where the ray hit the object
                     GameObject newObject = Instantiate(TurretToBuild, spawnPos, Quaternion.identity); // Instantiate the prefab at the spawn position
+                    money.AddCurrency(-price);
                 }
 
             }
