@@ -24,6 +24,7 @@ public class MainMenu : MonoBehaviour
     public void StartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1f;
 		Shop.SetActive(true);
         Debug.Log("Start BUTTON WORKING");
     }
