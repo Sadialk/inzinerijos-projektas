@@ -1244,15 +1244,15 @@ PrefabInstance:
     - target: {fileID: 2505255961924462568, guid: 337c44f97da394247992b152d887ed08, type: 3}
       propertyPath: Turret1
       value: 
-      objectReference: {fileID: 7458661164514328797, guid: 9c433af0128e4a44cb27fe700192e9d9, type: 3}
+      objectReference: {fileID: 4954990891038616752, guid: 9c433af0128e4a44cb27fe700192e9d9, type: 3}
     - target: {fileID: 2505255961924462568, guid: 337c44f97da394247992b152d887ed08, type: 3}
       propertyPath: Turret2
       value: 
-      objectReference: {fileID: 1619533440573066412, guid: b050627c525f929498be09d0077f7960, type: 3}
+      objectReference: {fileID: 1755873398991894492, guid: b050627c525f929498be09d0077f7960, type: 3}
     - target: {fileID: 2505255961924462568, guid: 337c44f97da394247992b152d887ed08, type: 3}
       propertyPath: Turret3
       value: 
-      objectReference: {fileID: 8895979762462765097, guid: a13eaedd18723c74bbdb521fc2127cfb, type: 3}
+      objectReference: {fileID: 6619990388008377896, guid: a13eaedd18723c74bbdb521fc2127cfb, type: 3}
     - target: {fileID: 2505255961924462569, guid: 337c44f97da394247992b152d887ed08, type: 3}
       propertyPath: m_RootOrder
       value: 7
