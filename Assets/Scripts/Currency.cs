@@ -3,7 +3,7 @@ using TMPro;
 public class Currency : MonoBehaviour
 {
     public static Currency money;
-    public int startingCurrency = 500;
+    public int startingCurrency = 100;
     private int currentCurrency;
     public TMP_Text currencyText;
     private void Awake()

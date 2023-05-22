@@ -3,13 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using UnityEngine;
 
 public class Victory : MonoBehaviour
 {
     public Button ContinueB;
     public Button MainMenuB;
-    public GameObject VictoryUI;
     void Start()
     {
         Button Continue = ContinueB.GetComponent<Button>();

@@ -12,7 +12,7 @@ public class WaveSpawn : MonoBehaviour
     public float countdown = 2f;
     private int waveIndex = 1;
     public TMP_Text CurrentWaveText;
-    public int WAVE_AMOUNT = 5;
+    public int WAVE_AMOUNT = 10;
     public GameObject VictoryUI;
 
     // Update is called once per frame
