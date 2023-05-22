@@ -15,9 +15,13 @@ Projektas yra sukurtas naudojantis Unity Hub 3.4.2 programine įranga, tad jį p
 •	Start Game – atidaro lygio pasirinkimo ekraną
 •	Quit Game – išjungia aplikaciją
 1 pažymėta rodyklė rodo, kur yra pasirenkamas koks bokštas bus statomas
+
 2 pažymėta rodyklė rodo, žaidėjo gyvybes kiekį arba kiek žaidėjas gali praleisti priešų kol pralaimės.
+
 3 pažymėta rodyklė rodo žaidėjo turima pinigų kiekį, kiekvienas bokštas kainuoja 50 pinigų, o kiekvienas įveiktas priešas duoda 25 pinigus.
+
 4 pažymėta rodyklė yra būdinga tik pirmajam lygiui ir nurodo, kad pasirinkus norimą bokštą jį statyti reikia nuspaudus T klavišą.
+
 **Sustabdymas**
 Žaidimas yra sustabdomas naudojant ESC klavišą.
 **Kaip laimėti?**
