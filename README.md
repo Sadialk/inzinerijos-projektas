@@ -9,6 +9,7 @@ Projektas yra sukurtas naudojantis Unity Hub 3.4.2 programine įranga, tad jį p
 3.	Pasirinkti build
 4.	Sekančiame lange pasirinkti, kur bus išsaugotas sukompiliuotas žaidimas
 5.	Tuomet reikia atsidaryti aplanką, kuris buvo pasirinktas ir paleisti Defensive Eras.exe
+6.	
 **Žaidimo naudojimosi gidas:**
 1.	Naudojantis pačiu žaidimu pirmame lange yra du mygtukai:
 •	Start Game – atidaro lygio pasirinkimo ekraną
