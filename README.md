@@ -1,6 +1,6 @@
 **The Defensive Eras** – „Tower defense“ tipo žaidimas, kuris praves tave pro įvairias žmonijos raidos eras.
-**Aprašas**
 
+**Aprašas**
 Šis žaidimas, buvo sukurtas KTU programavimo inžinerijos moduliui. Tai yra grupinis projektas. Užsiėmus vystyti ši projektą buvo siekta sukurti „tower defense“ tipo žaidimą, kurio eigoje žaidėjas aplankytų įvairias žmonijos eras. Kol kas žaidimas yra nepilnai išvystytas, tačiau yra noro ateityje jį „pagražinti“ t.y. patobulinti jo grafikas ir patobulinti jo funkcionalumą. Žaidimą dabartinėje būsenoje galite išbandyti ir panagrinėti.
 **Kaip paleisti ir naudotis projektu?**
 Projektas yra sukurtas naudojantis Unity Hub 3.4.2 programine įranga, tad jį paleisti ji ir yra naudojama. Norint naudotis galutiniu sustatytu „su build‘intu“ žaidimu reikia sekti šiuos žingsnius:
