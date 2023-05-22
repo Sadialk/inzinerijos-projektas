@@ -20,8 +20,7 @@ public class Victory : MonoBehaviour
     {
         if(SceneManager.GetActiveScene().buildIndex==5)
         {
-            OpenMainMenu();
-
+            SceneManager.LoadScene("credits");
         }
         else
         {
@@ -29,7 +28,6 @@ public class Victory : MonoBehaviour
         }
         
     }
-
     public void OpenMainMenu()
     {
         SceneManager.LoadScene("MainMenuScene");

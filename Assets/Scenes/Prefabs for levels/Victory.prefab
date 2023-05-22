@@ -46,4 +46,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ContinueB: {fileID: 0}
   MainMenuB: {fileID: 0}
-  VictoryUI: {fileID: 0}
