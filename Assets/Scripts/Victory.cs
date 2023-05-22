@@ -18,7 +18,16 @@ public class Victory : MonoBehaviour
     }
     public void OpenNextLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        if(SceneManager.GetActiveScene().buildIndex==5)
+        {
+            OpenMainMenu();
+
+        }
+        else
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+        
     }
 
     public void OpenMainMenu()

@@ -8,7 +8,7 @@ public class PlayerHealth : MonoBehaviour
 {
     public GameOverScreen gameOver;
     private bool _isDead;
-    public int startingHealth = 100; // The player's starting health
+    public int startingHealth = 3; // The player's starting health
     public int currentHealth; // The player's current health
 
     public TMP_Text healthText; 
@@ -18,7 +18,6 @@ public class PlayerHealth : MonoBehaviour
         currentHealth = startingHealth; 
         UpdateHealthText(); 
     }
-
     public void TakeDamage(int damageAmount)
     {
         currentHealth -= damageAmount; 

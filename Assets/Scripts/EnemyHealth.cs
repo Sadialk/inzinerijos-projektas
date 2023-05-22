@@ -5,7 +5,7 @@ public class EnemyHealth : MonoBehaviour
     Currency money;
     public int maxHealth = 100;
     public int currentHealth;
-    private int currencyValue = 5;
+    private int currencyValue = 25;
 
 
     void Start()

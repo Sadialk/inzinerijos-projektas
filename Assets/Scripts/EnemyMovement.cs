@@ -34,7 +34,7 @@ public class EnemyMovement : MonoBehaviour
         if (waveintIndex >= Waypoints.points.Length - 1)
         {
             manager = GameObject.Find("MANAGER");
-            manager.GetComponent<PlayerHealth>().TakeDamage(waveintIndex);
+            manager.GetComponent<PlayerHealth>().TakeDamage(1);
             
             Destroy(gameObject);
             return;
